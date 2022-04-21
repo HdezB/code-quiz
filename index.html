@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./develop/css/style.css">
+    <title>Coding Assessment</title>
+</head>
+
+<body>
+    <main class="page-content">
+        <header>
+            <nav>
+                <h2 id=timer></h2>
+            </nav>
+        </header>
+        <Section class="home-page">
+            <div class="intro">
+                <h1 class="page-title">Coding Quiz Challenge</h1>
+                <p class="introduction-text">
+                    The following questions will test your Javascript
+                    knowledge. This is a timed Assessment, each wrong answer
+                    will result in a penalization of 10 seconds/points! Good Luck.
+                </p>
+                <a class="btn" id="startquiz-btn">Start Quiz</a>
+            </div>
+        </Section>
+
+        <Section id="questions" class="hide">
+            <div class="questions-style">
+                <div id="question-title"></div>
+                <div id="answer-choices"></div>
+            </div>
+        </Section>
+
+        <section id="results" class="hide">
+            <div class="results-style">
+                <h2>All Done</h2>
+                <p>Your final score is <span id="highscore-result"></span>.</p>
+                <p>
+                    Enter initials: <input type="text" name="initials" id="initials" />
+                    <a id="highscore-submit-btn" class="btn">Submit</a>
+                </p>
+            <div>
+            </div>
+            </div>
+            <div id="highscores-list">
+                <ul id="scores-list-Item">
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <script src="./develop/js/script.js"></script>
+</body>
+
+</html>
