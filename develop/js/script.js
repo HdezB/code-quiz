@@ -122,21 +122,9 @@ function saveHighscore() {
         };
         scores.push(newScores);
         window.localStorage.setItem("scores", JSON.stringify(scores));
-        getHighscores();
+        window.location.href="./index.html"
     }
 }
-
-function getHighscores() {
-    var scoresArr = JSON.parse(localStorage.getItem("scores"));
-    for (var i = 0; i < scoresArr.length; i++) {
-        var li = document.createElement("li");
-        var ul = document.getElementById("highscores-list");
-
-        li.textContent = scoresArr[i].initials + " " + scoresArr[i].score;
-        ul.appendChild(li);
-    }
-}
-
 
 startButton.addEventListener("click", startQuiz);
 submitBtn.addEventListener("click", saveHighscore)
