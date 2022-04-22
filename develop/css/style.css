@@ -70,17 +70,6 @@ h2 {
     margin-top: 5px;
     border-radius: 8px;
 }
-
-#highscores-list {
-    width: 100vw;
-    margin-top: -100px;
-    display: flex;
-    flex-direction: column;
-    align-items: CENTER;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-}
 .btn:hover {
     cursor: pointer;
     box-shadow: 0px -5px 10px 0px rgba(216, 34, 255, .1);
