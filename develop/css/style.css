@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    background-color: rgb(29, 26, 26);
+}
+.hide {
+    display: none;
+}
+/* Navbar*/
+header nav {
+    display: flex;
+    padding: 30px 30px 30px 80px;
+    justify-content: space-between;
+}
+header nav a {
+    height: max-content;
+    font-size: 20px;
+}
+
+/* Page introduction */
+h1 {
+    color: white;
+    font-size: 60px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.intro, .questions-style, .results-style {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#answer-choices {
+    font-size: 40px;
+}
+.intro p {
+    width: 1000px;
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#startquiz-btn {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(180deg, rgba(137,11,164,1) 0%, rgba(82,3,119,1) 100%);
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+#highscores-list {
+    width: 100vw;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: CENTER;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0px -5px 10px 0px rgba(216, 34, 255, .1);
+    transform: scale(1.05);
+}
