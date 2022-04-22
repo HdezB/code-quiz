@@ -109,10 +109,21 @@ function submitHighscore() {
     questionSection.setAttribute("class", "hide");
 }
 
-function saveHighscore () {
+function saveHighscore() {
+
+    var initials = initialsEl.value.trim();
+
+    if (initials !== "") {
         var scores = JSON.parse(window.localStorage.getItem("scores")) || [];
+
+        var newScores = {
+            score: timeScore,
+            initials: initials
+        };
+        scores.push(newScores);
         window.localStorage.setItem("scores", JSON.stringify(scores));
-    getHighscores();
+        getHighscores();
+    }
 }
 
 function getHighscores() {
@@ -121,9 +132,8 @@ function getHighscores() {
         var li = document.createElement("li");
         var ul = document.getElementById("highscores-list");
 
-        li.textContent = scoresArr[i].initials + " " + scoresArr[i].scores;
+        li.textContent = scoresArr[i].initials + " " + scoresArr[i].score;
         ul.appendChild(li);
-        console.log(li);
     }
 }
 
